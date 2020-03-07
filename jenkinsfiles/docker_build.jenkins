@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t taksama/common:latest .'
+                	sh 'docker build -t taksama/toolbox:latest .'
                 }
             }
         }
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push taksama/common:latest
+                docker push taksama/toolbox:latest
                 '''
             }
         }
