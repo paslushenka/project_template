@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push taksama/toolbox:latest
+                docker push semaev/toolbox:latest
                 '''
             }
         }
