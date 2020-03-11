@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t taksama/toolbox:latest .'
+                	sh 'docker build -t taksama/toolbox:latest docker/toolbox/Dockerfile'
                 }
             }
         }
