@@ -19,6 +19,8 @@ pipeline {
                     sh """
                     docker login -u $USERNAME -p $PASSWORD
                     """
+                    echo $USERNAME
+                    echo $PASSWORD
                 }
             }
         }
