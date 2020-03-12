@@ -25,6 +25,8 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
+                echo `pwd`
+                echo `ls -la`
                 dir ('docker/toolbox') {
                 	sh 'docker build -t taksama/toolbox:latest /var/jenkins_home/workspace/build_toolbox/jenkinsfiles/Dockerfile'
                 }
