@@ -1,5 +1,5 @@
 #!groovy
-// Check ub1 properties
+// Check server
 properties([disableConcurrentBuilds()])
 
 pipeline {
